@@ -1,0 +1,143 @@
+doctype html
+html(lang='en')
+  include ../blocks/preloader.pug
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+    title Template
+    //- link(rel='shortcut icon', href="img/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css")
+    link(rel='stylesheet', href='css/bootstrap-grid.min.css?version=1')
+    link(rel='stylesheet', href='css/style.min.css?version=1')
+    meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=0")
+    meta(name="format-detection", content="telephone=no")
+
+  body
+    //- ToDo: Раскомментировать
+    //- +preloader
+    header.header
+      .container
+        .row
+          .col-md-3.tal
+            .site-menu
+              button.btn.btn--round.btn--hamburger
+                i.fa.fa-bars
+              nav.nav
+          .col-md-6.tac
+            a.logo.m-auto
+              .logo__circle
+              .logo__content
+                .logo__title Crios
+                .logo__desc free psd template
+          .col-md-3.tar
+            form.search-form
+              button.btn.btn--round.btn--search.ml-auto
+                i.fa.fa-search
+        .row
+          .col-12
+            .site-title
+              h1.title1.tac Simple PSD template with cool stuff
+              p.title__desc.tac Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .btn-wrap.tac
+              a.btn.m-auto(href="#main") explore template
+
+    section.main(id="main")
+      section.features(id="features")
+        .container
+          .row
+            .col-12
+              .section-title
+                p.title__desc.tac Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                h2.title2.tac Lorem ipsum dolor sit amet
+          .row
+            .col-md-3
+              .features__item
+                .features__icon.tac
+                  img(src="img/icon-1.svg" alt="church icon")
+                h3.title3.tac Lorem ipsum dolor sit amet
+                p.title__desc.title__desc--title3.mlr-auto.tac Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
+            .col-md-3
+              .features__item
+                .features__icon.tac
+                  img(src="img/icon-2.svg" alt="church icon")
+                h3.title3.tac Lorem ipsum dolor sit amet
+                p.title__desc.title__desc--title3.mlr-auto.tac Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
+            .col-md-3
+              .features__item
+                .features__icon.tac
+                  img(src="img/icon-3.svg" alt="church icon")
+                h3.title3.tac Lorem ipsum dolor sit amet
+                p.title__desc.title__desc--title3.mlr-auto.tac Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
+            .col-md-3
+              .features__item
+                .features__icon.tac
+                  img(src="img/icon-4.svg" alt="church icon")
+                h3.title3.tac Lorem ipsum dolor sit amet
+                p.title__desc.title__desc--title3.mlr-auto.tac Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
+          .row
+            .col-12
+              .btn-wrap.tac
+                a.btn.m-auto(href="#") check our offer
+
+      section.about(id="about")
+        .about__item
+          .about__img
+          .container
+            .row
+              .col-md-6.ml-auto
+                .about__content
+                  h2.title2 Lorem ipsum dolor
+                  p.text.text--about Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+        .about__item
+          .about__img
+          .container
+            .row
+              .col-md-6
+                .about__content
+                  h2.title2 Lorem ipsum dolor
+                  p.text.text--about Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+
+      section.cool-stuff
+        .cool-stuff__item
+          .container
+            .row
+              .col-md-6
+                .cool-stuff__img
+                  img(src="img/advantage-1.png" alt="playing now" width="449" height="677")
+              .col-md-6
+                .cool-stuff__content
+                  h2.title2.accent-color Lorem ipsum dolor
+                  p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+        .cool-stuff__item
+          .container
+            .row
+              .col-md-6
+                .cool-stuff__content
+                  h2.title2.accent-color Lorem ipsum dolor
+                  p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+              .col-md-6
+                .cool-stuff__img
+                  img(src="img/advantage-2.png" alt="chating" width="449" height="677")
+
+      section.reviews(id="reviews")
+        .container
+          .row
+            .col-md-6.reviews__img
+            .col-md-6.reviews__content
+              h3.title3.red-color Template is awesome
+              blockquote.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+              cite.reviews__cite
+                b.reviews__author John Doe
+                span.reviews__position CEO at Crios.com
+
+      section.cta(id="cta")
+        .container
+          .row
+            .col-12.tac
+              p.title__desc Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              h2.title2 Lorem ipsum dolor sit amet
+              a.btn.btn--cta(href="#") push button
+
+    footer.footer(id="footer")
+
+    script(src="js/script.min.js?version=1")

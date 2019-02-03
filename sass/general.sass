@@ -1,0 +1,89 @@
+/* ОБЩИЕ СТИЛИ */
+body
+  color: $body-color
+  background-color: $body-bg
+  font-family: $ff-main
+
+  @include media-sm
+
+img
+  width: 100%
+  vertical-align: middle
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.title1
+  font-size: 48px
+  line-height: 1.2
+  font-weight: 600
+  color: #000
+
+.title2
+  font-size: 48px
+  line-height: 1.2
+  font-weight: 600
+  color: #000
+
+.title3
+  font-size: 18px
+  line-height: 1.2
+  font-weight: 600
+  color: #000
+
+.title__desc
+  opacity: 0.25
+  font-size: 18px
+  line-height: 18px
+  font-weight: 600
+  &--title3
+    opacity: 0.34
+    font-size: 14px
+    line-height: 24px
+
+.text
+  max-width: 500px
+  opacity: 0.34
+  font-size: 16px
+  line-height: 36px
+
+.parallax
+  position: relative
+  background-repeat: no-repeat
+  background-position: center center
+  background-attachment: fixed
+  background-size: cover
+  background-color: #28272e
+  z-index: 1
+
+.accent-color
+  color: $accent
+
+.red-color
+  color: #fe3254
+
+.tal
+  text-align: left
+
+.tar
+  text-align: right
+
+.tac
+  text-align: center
+
+.ml-auto
+  margin-left: auto
+
+.mlr-auto
+  margin: 0 auto
+
+/* . общие стили  */
+
+
+/* Переопределение классов  */
+.fa
+  @include fa
+/* . переопределение классов */
+

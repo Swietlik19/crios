@@ -1,0 +1,34 @@
+.about
+
+  &__img
+    position: absolute
+    top: 0
+    left: 0
+    width: 50%
+    height: 100%
+    background: #f7f8fb no-repeat left top
+    background-size: cover
+    z-index: 2
+
+  &__item
+    position: relative
+    padding:
+      top: 184px
+      bottom: 181px
+    background-color: #f7f8fb
+    &:first-of-type
+
+      .about__img
+        background-image: url('../img/img-1.jpg')
+      .about__content
+        padding-left: 98px
+    &:last-of-type
+
+      .about__img
+        left: 50%
+        background-image: url('../img/img-2.jpg')
+
+  .title2
+    margin-bottom: 32px
+
+  @include media-sm

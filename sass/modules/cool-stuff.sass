@@ -1,0 +1,36 @@
+.cool-stuff
+  background-color: #fff
+  background-image: url(../img/icon-snowflake-1.svg),url(../img/icon-snowflake-2.svg)
+  background-repeat: no-repeat
+  background-position: 46px -90px, 110% 115%
+  background-size: 674px 674px, 788px 788px
+
+  &__item
+    position: relative
+    padding:
+      top: 162px
+      bottom: 119px
+
+  &__content
+    padding-top: 222px
+
+  &__img
+    width: 449px
+    height: 677px
+    margin: 0 auto
+    z-index: 10
+
+  .title2
+    margin-bottom: 30px
+
+  &__item:last-of-type
+    padding:
+      top: 0
+      bottom: 165px
+
+    .cool-stuff__content
+      padding:
+        top: 234px
+        left: 182px
+
+  @include media-sm
