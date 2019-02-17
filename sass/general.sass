@@ -20,34 +20,49 @@ img
   line-height: 1.2
   font-weight: 600
   color: #000
+  @include media-sm
+    font-size: 40px
+  @include media-xs
+    font-size: 28px
+    font-weight: 600
 
 .title2
   font-size: 48px
   line-height: 1.2
   font-weight: 600
   color: #000
+  @include media-xs
+    font-size: 26px
 
 .title3
   font-size: 18px
   line-height: 1.2
   font-weight: 600
   color: #000
+  @include media-xs
+    font-size: 16px
 
 .title__desc
   opacity: 0.25
   font-size: 18px
   line-height: 18px
   font-weight: 600
+  @include media-xs
+    font-size: 14px
   &--title3
     opacity: 0.34
     font-size: 14px
     line-height: 24px
+    @include media-xs
+      font-size: 12px
 
 .text
   max-width: 500px
   opacity: 0.34
   font-size: 16px
   line-height: 36px
+  @include media-xs
+    font-size: 14px
 
 .parallax
   position: relative

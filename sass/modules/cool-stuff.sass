@@ -10,6 +10,15 @@
     padding:
       top: 162px
       bottom: 119px
+    &:last-of-type
+      padding:
+        top: 0
+        bottom: 165px
+
+      .cool-stuff__content
+        padding:
+          top: 234px
+          left: 182px
 
   &__content
     padding-top: 222px
@@ -23,14 +32,49 @@
   .title2
     margin-bottom: 30px
 
-  &__item:last-of-type
-    padding:
-      top: 0
-      bottom: 165px
+  @include media-lg
+    &__item
+      &:last-of-type
+        .cool-stuff__content
+          padding:
+            left: 0
 
-    .cool-stuff__content
+  @include media-md
+    background-size: 400px 400px, 450px 450px
+    &__item
       padding:
-        top: 234px
-        left: 182px
+        top: 100px
+        bottom: 80px
+      &:last-of-type
+        padding:
+          bottom: 80px
+        .cool-stuff__content
+          padding:
+            top: 80px
+    &__content
+      padding-top: 80px
+    &__img
+      width: 300px
+      height: auto
+      img
+        width: 100%
+        height: auto
 
   @include media-sm
+    &__item
+      padding:
+        top: 80px
+        bottom: 10px
+      &:last-of-type
+        .cool-stuff__content
+          padding:
+            top: 20px
+    &__content
+      padding-top: 20px
+    &__img
+      width: 250px
+    .title2
+      font-size: 36px
+      text-align: center
+    .text
+      font-size: 14px

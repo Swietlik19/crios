@@ -34,9 +34,35 @@
     letter-spacing: 0.01em
     text-transform: uppercase
 
+  @include media-sm
+    height: 150px
+    &__circle
+      top: -150px
+      width: 300px
+      height: 300px
+    &__content
+      top: 45px
+    &__title
+      font-size: 40px
+    &__desc
+      font-size: 16px
+  @include media-xs
+    height: 125px
+    &__circle
+      top: -125px
+      width: 250px
+      height: 250px
+    &__content
+      top: 25px
+    &__title
+      font-size: 35px
+    &__desc
+      font-size: 12px
+
 .logo[href]
   cursor: pointer
   &:hover,
   &:focus
     .logo__content
       box-shadow: 0px 0px 75px 0px $shadow-color--hover
+

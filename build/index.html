@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <title>Template</title>
+    <title>Crios</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css?version=1">
     <link rel="stylesheet" href="css/style.min.css?version=1">
@@ -11,22 +11,25 @@
     <meta name="format-detection" content="telephone=no">
   </head>
   <body>
+      <section class="preloader text-center" id="preloader">
+        <div class="loader"></div>
+      </section>
     <header class="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 tal">
-            <div class="site-menu">
-              <button class="btn btn--round btn--hamburger"><i class="fa fa-bars"></i></button>
-              <nav class="nav"></nav>
-            </div>
-          </div>
-          <div class="col-md-6 tac"><a class="logo m-auto">
+          <div class="col-sm-6 col-12 tac"><a class="logo m-auto">
               <div class="logo__circle"></div>
               <div class="logo__content">
                 <div class="logo__title">Crios</div>
                 <div class="logo__desc">free psd template</div>
               </div></a></div>
-          <div class="col-md-3 tar">
+          <div class="col-sm-3 order-sm-first col-6 tal">
+            <div class="site-menu">
+              <button class="btn btn--round btn--hamburger"><i class="fa fa-bars"></i></button>
+              <nav class="nav"></nav>
+            </div>
+          </div>
+          <div class="col-sm-3 col-6 tar">
             <form class="search-form">
               <button class="btn btn--round btn--search ml-auto"><i class="fa fa-search"></i></button>
             </form>
@@ -55,28 +58,28 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
               <div class="features__item">
                 <div class="features__icon tac"><img src="img/icon-1.svg" alt="church icon"></div>
                 <h3 class="title3 tac">Lorem ipsum dolor sit amet</h3>
                 <p class="title__desc title__desc--title3 mlr-auto tac">Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
               <div class="features__item">
                 <div class="features__icon tac"><img src="img/icon-2.svg" alt="church icon"></div>
                 <h3 class="title3 tac">Lorem ipsum dolor sit amet</h3>
                 <p class="title__desc title__desc--title3 mlr-auto tac">Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
               <div class="features__item">
                 <div class="features__icon tac"><img src="img/icon-3.svg" alt="church icon"></div>
                 <h3 class="title3 tac">Lorem ipsum dolor sit amet</h3>
                 <p class="title__desc title__desc--title3 mlr-auto tac">Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.</p>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6 col-lg-3">
               <div class="features__item">
                 <div class="features__icon tac"><img src="img/icon-4.svg" alt="church icon"></div>
                 <h3 class="title3 tac">Lorem ipsum dolor sit amet</h3>
@@ -96,7 +99,7 @@
           <div class="about__img"></div>
           <div class="container">
             <div class="row">
-              <div class="col-md-6 ml-auto">
+              <div class="col-12 col-md-6 ml-auto">
                 <div class="about__content">
                   <h2 class="title2">Lorem ipsum dolor</h2>
                   <p class="text text--about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
@@ -109,7 +112,7 @@
           <div class="about__img"></div>
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-12 col-md-6">
                 <div class="about__content">
                   <h2 class="title2">Lorem ipsum dolor</h2>
                   <p class="text text--about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
@@ -123,14 +126,14 @@
         <div class="cool-stuff__item">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
-                <div class="cool-stuff__img"><img src="img/advantage-1.png" alt="playing now" width="449" height="677"></div>
-              </div>
-              <div class="col-md-6">
+              <div class="col-sm-6 order-sm-last">
                 <div class="cool-stuff__content">
                   <h2 class="title2 accent-color">Lorem ipsum dolor</h2>
                   <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
                 </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="cool-stuff__img"><img src="img/advantage-1.png" alt="playing now" width="449" height="677"></div>
               </div>
             </div>
           </div>
@@ -138,13 +141,13 @@
         <div class="cool-stuff__item">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="cool-stuff__content">
                   <h2 class="title2 accent-color">Lorem ipsum dolor</h2>
                   <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.</p>
                 </div>
               </div>
-              <div class="col-md-6">
+              <div class="col-sm-6">
                 <div class="cool-stuff__img"><img src="img/advantage-2.png" alt="chating" width="449" height="677"></div>
               </div>
             </div>

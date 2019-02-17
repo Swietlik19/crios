@@ -17,13 +17,11 @@
       bottom: 181px
     background-color: #f7f8fb
     &:first-of-type
-
       .about__img
         background-image: url('../img/img-1.jpg')
       .about__content
         padding-left: 98px
     &:last-of-type
-
       .about__img
         left: 50%
         background-image: url('../img/img-2.jpg')
@@ -31,4 +29,32 @@
   .title2
     margin-bottom: 32px
 
+  @include media-md
+    .title2
+      font-size: 38px
+    &__item
+      padding:
+        top: 140px
+        bottom: 140px
+      background-color: transparent
+      &:first-of-type
+        .about__content
+          padding-left: 40px
   @include media-sm
+    &__content
+      padding-left: 40px
+    &__img
+      width: 100%
+      height: 100%
+      opacity: 0.3
+      z-index: 0
+    &__item
+      padding:
+        top: 90px
+        bottom: 90px
+      &:last-of-type
+        .about__img
+          left: 0
+      .text
+        opacity: 1
+        color: #000

@@ -4,7 +4,7 @@ html(lang='en')
   head
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=Edge")
-    title Template
+    title Crios
     //- link(rel='shortcut icon', href="img/favicon.ico", type="image/x-icon")
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.0.13/css/all.css")
     link(rel='stylesheet', href='css/bootstrap-grid.min.css?version=1')
@@ -13,23 +13,22 @@ html(lang='en')
     meta(name="format-detection", content="telephone=no")
 
   body
-    //- ToDo: Раскомментировать
-    //- +preloader
+    +preloader
     header.header
       .container
         .row
-          .col-md-3.tal
-            .site-menu
-              button.btn.btn--round.btn--hamburger
-                i.fa.fa-bars
-              nav.nav
-          .col-md-6.tac
+          .col-sm-6.col-12.tac
             a.logo.m-auto
               .logo__circle
               .logo__content
                 .logo__title Crios
                 .logo__desc free psd template
-          .col-md-3.tar
+          .col-sm-3.order-sm-first.col-6.tal
+            .site-menu
+              button.btn.btn--round.btn--hamburger
+                i.fa.fa-bars
+              nav.nav
+          .col-sm-3.col-6.tar
             form.search-form
               button.btn.btn--round.btn--search.ml-auto
                 i.fa.fa-search
@@ -50,25 +49,25 @@ html(lang='en')
                 p.title__desc.tac Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 h2.title2.tac Lorem ipsum dolor sit amet
           .row
-            .col-md-3
+            .col-md-6.col-lg-3
               .features__item
                 .features__icon.tac
                   img(src="img/icon-1.svg" alt="church icon")
                 h3.title3.tac Lorem ipsum dolor sit amet
                 p.title__desc.title__desc--title3.mlr-auto.tac Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
-            .col-md-3
+            .col-md-6.col-lg-3
               .features__item
                 .features__icon.tac
                   img(src="img/icon-2.svg" alt="church icon")
                 h3.title3.tac Lorem ipsum dolor sit amet
                 p.title__desc.title__desc--title3.mlr-auto.tac Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
-            .col-md-3
+            .col-md-6.col-lg-3
               .features__item
                 .features__icon.tac
                   img(src="img/icon-3.svg" alt="church icon")
                 h3.title3.tac Lorem ipsum dolor sit amet
                 p.title__desc.title__desc--title3.mlr-auto.tac Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh.
-            .col-md-3
+            .col-md-6.col-lg-3
               .features__item
                 .features__icon.tac
                   img(src="img/icon-4.svg" alt="church icon")
@@ -84,7 +83,7 @@ html(lang='en')
           .about__img
           .container
             .row
-              .col-md-6.ml-auto
+              .col-12.col-md-6.ml-auto
                 .about__content
                   h2.title2 Lorem ipsum dolor
                   p.text.text--about Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
@@ -92,7 +91,7 @@ html(lang='en')
           .about__img
           .container
             .row
-              .col-md-6
+              .col-12.col-md-6
                 .about__content
                   h2.title2 Lorem ipsum dolor
                   p.text.text--about Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
@@ -101,21 +100,22 @@ html(lang='en')
         .cool-stuff__item
           .container
             .row
-              .col-md-6
-                .cool-stuff__img
-                  img(src="img/advantage-1.png" alt="playing now" width="449" height="677")
-              .col-md-6
+              .col-sm-6.order-sm-last
                 .cool-stuff__content
                   h2.title2.accent-color Lorem ipsum dolor
                   p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
+              .col-sm-6
+                .cool-stuff__img
+                  img(src="img/advantage-1.png" alt="playing now" width="449" height="677")
+
         .cool-stuff__item
           .container
             .row
-              .col-md-6
+              .col-sm-6
                 .cool-stuff__content
                   h2.title2.accent-color Lorem ipsum dolor
                   p.text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vel leo efficitur, venenatis est ut, tincidunt nibh. Suspendisse lobortis lectus vel imperdiet ullamcorper.
-              .col-md-6
+              .col-sm-6
                 .cool-stuff__img
                   img(src="img/advantage-2.png" alt="chating" width="449" height="677")
 
