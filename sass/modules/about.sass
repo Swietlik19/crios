@@ -58,3 +58,11 @@
       .text
         opacity: 1
         color: #000
+  @include media-xs
+    &__item
+      &:first-of-type
+        .about__img
+          background-image: url('../img/img-1--mob.jpg')
+      &:last-of-type
+        .about__img
+          background-image: url('../img/img-2--mob.jpg')
